@@ -18,6 +18,7 @@ class PropertyTable extends Component {
   }
 
   getProperties() {
+               
     fetch('http://localhost:8080/properties').then((res) => {
       res.json().then((body) => {
         // setting state from API response
